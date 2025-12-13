@@ -124,7 +124,7 @@ void Character::attack(Character* target) {
     // Базовая формула урона
     int damage = level * 3;
     
-    std::cout << "⚔️ " << name << " атакует " << target->getName() 
+    std::cout << " -> " << name << " атакует " << target->getName() 
               << " и наносит " << damage << " урона\n";
     
     target->takeDamage(damage);
