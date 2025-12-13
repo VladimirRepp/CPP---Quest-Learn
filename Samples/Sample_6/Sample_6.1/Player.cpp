@@ -9,16 +9,16 @@ Player::Player(string player_name, int player_health, int player_damage, int pla
     level = player_level;
 }
 
-// Реализация метода Attack после того, как Enemy полностью определен
+// Р РµР°Р»РёР·Р°С†РёСЏ РјРµС‚РѕРґР° Attack РїРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє Enemy РїРѕР»РЅРѕСЃС‚СЊСЋ РѕРїСЂРµРґРµР»РµРЅ
 void Player::Attack(Enemy& target) {
     target.TakeDamage(damage);
 }
 
 void Player::PrintStats() {
-    cout << "Имя: " << name << endl;
-    cout << "Здоровья: " << health << endl;
-    cout << "Урон: " << damage << endl;
-    cout << "Уровень: " << level << endl;
+    cout << "РРјСЏ: " << name << endl;
+    cout << "Р—РґРѕСЂРѕРІСЊРµ: " << health << endl;
+    cout << "РЈСЂРѕРЅ: " << damage << endl;
+    cout << "РЈСЂРѕРІРµРЅСЊ: " << level << endl;
 }
 
 void Player::Heal(int amount) {
