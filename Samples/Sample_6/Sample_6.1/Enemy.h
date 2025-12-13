@@ -4,7 +4,7 @@
 
 using namespace std;
 
-// Предварительное объявление класса Player
+// РџСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕРµ РѕР±СЉСЏРІР»РµРЅРёРµ РєР»Р°СЃСЃР° Player
 class Player;
 
 class Enemy
@@ -19,10 +19,9 @@ public:
 	Enemy(string enemy_type, int enemy_health,
 		int enemy_damage, int enemy_level);
 
-	void Attack(Player& targer);
+	void Attack(Player& target);
 	void PrintStats();
 	void Heal(int amount);
 	void TakeDamage(int damage);
 	bool IsAlive();
 };
-
